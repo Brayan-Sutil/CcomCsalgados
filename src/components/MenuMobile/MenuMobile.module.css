@@ -1,0 +1,67 @@
+.box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 75%;
+  height: 100%;
+  background-color: #FF0000; 
+  z-index: 9999; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+}
+
+.titleBox{
+  border-bottom: 3px solid #fff;
+  width: 80%;
+  text-align: center;
+}
+
+.title{
+  margin-top: -20px;
+}
+
+.itemMenu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.itemMenu nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.itemMenu nav a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  margin: 7.5px;
+}
+
+.itemMenu nav a:focus, 
+.itemMenu nav a:active {
+  color: #fff;
+}
+.box .contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 2px solid #fff;
+}
+
+.box .contact h3{
+  margin: 10px;
+}
+
+@media only screen and (min-width: 721px) {
+  .box {
+    display: none;
+  }
+}

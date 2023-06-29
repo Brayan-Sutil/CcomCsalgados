@@ -1,0 +1,13 @@
+.containerBakedSalted{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0px 40px;
+    justify-content:space-between;
+}
+
+@media only screen and (max-device-width: 720px){
+    .containerBakedSalted{
+        padding: 0px 20px;
+    }
+}

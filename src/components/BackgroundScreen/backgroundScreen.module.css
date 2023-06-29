@@ -1,0 +1,67 @@
+.boxTitles{
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    margin-right: 15px
+}
+
+.textWelcome{
+    color: #FF0A0A;
+    text-align: start;
+    margin-bottom: -50px;
+}
+
+.title{
+    font-size: 52px;
+    letter-spacing: -0.408px;
+    
+}
+
+.title span{
+    color: #FF0A0A;
+}
+
+.textAdd{
+    text-align: end;
+    margin-top: -45px;
+}
+
+
+@media only screen and (max-device-width: 930px){
+    .title{
+        font-size: 45px;
+    }
+}
+
+@media only screen and (max-device-width: 870px){
+    .title{
+        font-size: 37px;
+    }
+
+    .textWelcome{
+        margin-bottom: -37px;
+        font-size: 18px;
+    }
+    
+    .textAdd{
+        margin-top: -32px;
+        font-size: 18px;
+
+    }
+}
+
+@media only screen and (max-device-width: 820px){
+    .title{
+        font-size: 32px;
+    }
+
+    
+}
+
+@media only screen and (max-device-width: 440px){
+    .title{
+        font-size: 25px;
+        margin: 28px 0;
+    }
+    
+}

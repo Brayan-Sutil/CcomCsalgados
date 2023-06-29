@@ -1,0 +1,40 @@
+.containerHeader{
+    border-bottom: 3px solid #FF0A0A;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.containerHeader .imageLogo{
+    height: 110px;
+    margin-right: 50px;
+}
+
+.containerHeader .boxLogo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media only screen and (max-device-width: 820px){
+    .containerHeader .imageLogo{
+        width: 100px;
+        height: 85px;
+    }
+}
+
+@media only screen and (max-device-width: 500px){
+    .containerHeader .imageLogo{
+        margin-right: 35px;
+    }
+}
+
+@media only screen and (max-device-width: 470px){
+    .containerHeader .imageLogo{
+        margin-right: 10px;
+    }
+}
+
+

@@ -1,0 +1,16 @@
+.container{
+    display: none;
+}
+
+@media only screen and (max-device-width: 720px){
+    .container{
+        display: flex;
+        margin-right: 25px;
+    }
+}
+
+@media only screen and (max-device-width: 520px){
+    .container{
+        margin-right: 0;
+    }
+}

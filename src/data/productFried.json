@@ -1,0 +1,23 @@
+[
+    {
+      "produto": "Coxinha",
+      "valor": "3,00",
+      "img": ""
+    },{
+        "produto": "Queijo e presunto",
+        "valor": "3,00",
+        "img": ""
+    },{
+        "produto": "Frango Catupiry",
+        "valor": "3,00",
+        "img": ""
+    },{
+        "produto": "Vina",
+        "valor": "3,00",
+        "img": ""
+    },{
+        "produto": "Kibe",
+        "valor": "3,00",
+        "img": ""
+    }
+]
