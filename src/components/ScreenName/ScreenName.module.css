@@ -1,0 +1,17 @@
+.containerScreenName{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #ff0000;
+}
+
+.titleScreenName{
+    margin: 5px 0;
+}
+
+@media only screen and (min-width: 721px){
+   .containerScreenName {
+        display: none;
+   }
+   
+}

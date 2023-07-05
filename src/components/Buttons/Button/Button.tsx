@@ -7,11 +7,11 @@ type Props = {
 
 const Button = ({ onClick, label }: Props) => {
     return(
-        <div onClick={onClick} className={css.buttonContainer}>
+        <button onClick={onClick} className={css.buttonContainer}>
             <h1 className={css.h1}>
                 {label}
             </h1>
-        </div>
+        </button>
     )
 }
 

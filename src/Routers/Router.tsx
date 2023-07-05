@@ -11,7 +11,7 @@ import Home from "../screen/Home/Home";
      children: [
        {
          path: "/",
-         element: <BakedSalted />,
+         element: <FriedSalty />,
        },
        {
          path: "/salgados_fritos",

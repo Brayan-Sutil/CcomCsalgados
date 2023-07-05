@@ -8,10 +8,10 @@
     align-items: center;
     justify-content: center;
     color: white;
-    cursor: pointer;
 }
 
 .buttonContainer:active{
+    outline: none;
     background-color: white;
     color: black;
 }

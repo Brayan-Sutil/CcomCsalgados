@@ -3,7 +3,6 @@ import css from "./FriedSalty.module.css"
 import productFried from "../../data/productFried.json";
 import BoxProduct from "../../components/BoxProduct/BoxProduct";
 
-
 const FriedSalty = () => {
     const [productSelect, setProductSelect] = useState<string>();
     console.log(productSelect);
