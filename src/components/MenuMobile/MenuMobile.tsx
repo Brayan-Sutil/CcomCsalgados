@@ -35,18 +35,19 @@ const MenuMobile = ({
               }}
             >
               <nav>
-                <NavLink to={"/sobre_nos_deixe"}>Sobre Nós Deixe</NavLink>
+                <NavLink to={"/sobre_nos"}>Sobre Nós Deixe</NavLink>
                 <NavLink to={"/sua_opiniao"}>Sua Opiniao</NavLink>
-                <NavLink to={"/localizaçao"}>Localizaçao</NavLink>
+                <NavLink to={"/localizacao"}>Localizaçao</NavLink>
               </nav>
               <IconsMenuMobile />
             </div>
           ) : (
             <nav>
-              <NavLink to={"/"}>Salgado Assado</NavLink>
-              <NavLink to={"/salgados_fritos"}>Salgado Frito</NavLink>
               <NavLink to={"/cento_assados"}>Cento Assado</NavLink>
               <NavLink to={"/cento_fritos"}>Cento Frito</NavLink>
+              <NavLink to={"/carrinho"} style={{ textDecoration: "none" }}>
+                Carrinho
+              </NavLink>
             </nav>
           )}
         </div>

@@ -8,6 +8,7 @@
     align-items: center;
     justify-content: center;
     color: white;
+    cursor: pointer;
 }
 
 .buttonContainer:active{

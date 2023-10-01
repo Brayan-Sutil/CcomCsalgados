@@ -14,7 +14,7 @@
 .title{
     font-size: 52px;
     letter-spacing: -0.408px;
-    
+    color: #000000;
 }
 
 .title span{
@@ -24,6 +24,7 @@
 .textAdd{
     text-align: end;
     margin-top: -45px;
+    color: #000000;
 }
 
 

@@ -1,23 +1,37 @@
 [
-    {
-      "produto": "Coxinha",
-      "valor": "3,00",
-      "img": ""
-    },{
-        "produto": "Queijo e presunto",
-        "valor": "3,00",
-        "img": ""
-    },{
-        "produto": "Frango Catupiry",
-        "valor": "3,00",
-        "img": ""
-    },{
-        "produto": "Vina",
-        "valor": "3,00",
-        "img": ""
-    },{
-        "produto": "Kibe",
-        "valor": "3,00",
-        "img": ""
-    }
+  {
+    "produto": "Coxinha",
+    "valor": "45,00",
+    "img": ""
+  },
+  {
+    "produto": "Queijo e presunto",
+    "valor": "45,00",
+    "img": ""
+  },
+  {
+    "produto": "Frango Catupiry",
+    "valor": "45,00",
+    "img": ""
+  },
+  {
+    "produto": "Vina",
+    "valor": "45,00",
+    "img": ""
+  },
+  {
+    "produto": "Kibe",
+    "valor": "45,00",
+    "img": ""
+  },
+  {
+    "produto": "Pastel de carne",
+    "valor": "45,00",
+    "img": ""
+  },
+  {
+    "produto": "Bolinha de queijo",
+    "valor": "45,00",
+    "img": ""
+  }
 ]

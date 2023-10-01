@@ -17,7 +17,7 @@ const Header = ({ openMenu }: headerProps) => {
           <BackgroundScreen />
         </div>
         <ButtonOutlined onClick={openMenu} />
-        <ButtonFullBuy label="Total do Seu Pedido" />
+        <ButtonFullBuy label="Total do Seu Pedido" onclick={() => ''} />
       </div>
     </>
   );

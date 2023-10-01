@@ -1,37 +1,32 @@
 [
   {
     "produto": "Calzone de Catupiry",
-    "valor": "3,00",
-    "img": ""
-  },
-  {
-    "produto": "Queijo e presunto",
-    "valor": "3,00",
+    "valor": "80,00",
     "img": ""
   },
   {
     "produto": "Carne",
-    "valor": "3,00",
+    "valor": "80,00",
     "img": ""
   },
   {
     "produto": "Empada",
-    "valor": "3,00",
+    "valor": "80,00",
     "img": ""
   },
   {
     "produto": "Dogão",
-    "valor": "3,00",
+    "valor": "80,00",
     "img": ""
   },
   {
     "produto": "Hamburgão",
-    "valor": "3,00",
+    "valor": "80,00",
     "img": ""
   },
   {
     "produto": "Calabresa",
-    "valor": "3,00",
+    "valor": "80,00",
     "img": ""
   }
 ]

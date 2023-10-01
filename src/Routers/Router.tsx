@@ -3,6 +3,8 @@ import App from "../App";
 import BakedSalted from "../screen/BakedSalted/BakedSalted";
 import FriedSalty from "../screen/FriedSalty/FriedSalty";
 import Home from "../screen/Home/Home";
+import About from "../screen/About/About";
+import OrderCart from "../screen/OrderCart/OrderCart";
 
  const Router = createBrowserRouter([
    {
@@ -11,23 +13,31 @@ import Home from "../screen/Home/Home";
      children: [
        {
          path: "/",
-         element: <FriedSalty />,
-       },
-       {
-         path: "/salgados_fritos",
-         element: <FriedSalty />,
-       },
-       {
-         path: "/salgados_assados",
-         element: <BakedSalted />,
+         element: <Home />,
        },
        {
          path: "/cento_fritos",
-         element: <Home />,
+         element: <FriedSalty />,
        },
        {
          path: "/cento_assados",
+         element: <BakedSalted />,
+       },
+       {
+         path: "/sobre_nos",
+         element: <About />,
+       },
+       {
+         path: "/sua_opiniao",
          element: <Home />,
+       },
+       {
+         path: "/localizacao",
+         element: <Home />,
+       },
+       {
+         path: "/carrinho",
+         element: <OrderCart />,
        },
      ],
    },

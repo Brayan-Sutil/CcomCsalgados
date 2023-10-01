@@ -1,0 +1,17 @@
+.containerAbout{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px
+}
+
+.aboutList{
+    color: #000;
+}
+
+.aboutList li{
+    color: #000;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+}

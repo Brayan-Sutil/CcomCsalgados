@@ -1,0 +1,46 @@
+.containerButtonQtd{
+    height: 20px;
+    width: 75px;
+    border: 2px solid #ff0000;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.containerButtonQtd h2 {
+    font-size: 20px;
+    color: #000;
+}
+
+.containerButtonQtd .buttonAdd {
+    height: 100%;
+    width: 23px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border: none;
+    border-right: 2px solid #ff0000;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #ffff;
+    cursor: pointer;
+}
+
+.containerButtonQtd .buttonRemove {
+    height: 100%;
+    width: 20px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border: none;
+    border-left: 2px solid #ff0000;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #ffff;
+    cursor: pointer;    
+}
+
+.buttonAdd:active, .buttonRemove:active{
+    outline: none;
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+}
