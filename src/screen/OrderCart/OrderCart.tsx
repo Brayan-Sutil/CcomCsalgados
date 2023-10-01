@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import css from "./OrderCart.module.css"
 import BoxProduct from "../../components/BoxProduct/BoxProduct";
 
