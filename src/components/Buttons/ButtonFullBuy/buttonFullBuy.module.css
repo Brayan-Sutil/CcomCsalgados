@@ -10,11 +10,6 @@
     cursor: pointer;
 }
 
-.container:hover{
-    background-color: #ff000012;
-    transition: 1s ;
-}
-
 .container .titleButton{
     color: red;
     font-size: 16px;
@@ -30,6 +25,19 @@
 .container .iconText{
     display: flex;
     flex-direction: row;
+}
+
+.container .details {
+    display: none;
+    background-color: #FF7F00;
+    width: 200px;
+    text-align: center;
+    position: absolute;
+    top: 96px;
+}
+
+.container:hover .details {
+    display: block;
 }
 
 @media only screen and (max-device-width: 720px){

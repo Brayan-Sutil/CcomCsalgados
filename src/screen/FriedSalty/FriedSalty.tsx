@@ -9,20 +9,25 @@ interface Product {
   img: string;
 }
 
+const addProduct = (
+  product: Product,
+  productSelectProps: Product[],
+  setProductSelectFunc: React.Dispatch<React.SetStateAction<Product[]>>
+) => {
+  const exists = productSelectProps.some((p) => p.produto === product.produto);
+  if (!exists) {
+    setProductSelectFunc((prevProducts) => [...prevProducts, product]);
+  }
+};
+
 const FriedSalty = () => {
-   const [productSelect, setProductSelect] = useState<Product[]>([]);
-   
-   const addProduct = (product: Product) => {
-     const exists = productSelect.some((p) => p.produto === product.produto);
-     if (!exists) {
-        setProductSelect((prevProducts) => [...prevProducts, product]);
-      }
-    
-   };
+   const initialProducts = localStorage.getItem("meuArray")
+     ? JSON.parse(localStorage.getItem("meuArray") as string) : [];
+   const [productSelect, setProductSelect] = useState<Product[]>(initialProducts);
 
    useEffect(() => {
-      localStorage.setItem("meuArray", JSON.stringify(productSelect));
-   },[productSelect])
+     localStorage.setItem("meuArray", JSON.stringify(productSelect));
+   }, [productSelect]);
 
     return (
       <div className={css.containerFriedSalty}>
@@ -33,7 +38,7 @@ const FriedSalty = () => {
               key={index}
               nameProduct={obj.produto}
               valueProduct={obj.valor}
-              onClick={() => addProduct(obj)}
+              onClick={() => addProduct(obj, productSelect, setProductSelect)}
             />
           );
         })}
