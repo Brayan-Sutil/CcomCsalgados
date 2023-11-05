@@ -1,20 +1,22 @@
 import { NavLink } from "react-router-dom";
 import css from "./buttonFullBuy.module.css"
 import { ShoppingCartOutlined } from '@mui/icons-material';
+import { UseContextInProvider } from "../../../Context/Context";
 
 type Props = {
-  label: string;
   onclick: () => void;
 };
 
-const ButtonFullBuy = ({ label, onclick }: Props) => {
- const arrayString = localStorage.getItem("meuArray");
- const products = arrayString ? JSON.parse(arrayString) : [];
- const numberOfProducts = products.length;
- const totalValue = products.reduce((total: number, product: { valor: string; }) => {
-   const productValue = parseFloat(product.valor.replace(",", "."));
-   return total + productValue;
- }, 0);
+const ButtonFullBuy = ({ onclick }: Props) => {
+ const { wishList } = UseContextInProvider()
+ const numberOfProducts = wishList.length;
+ const totalValue = wishList.reduce(
+   (total: number, product: { valor: string }) => {
+     const productValue = parseFloat(product.valor.replace(",", "."));
+     return total + productValue;
+   },
+   0
+ );
  const formattedTotalValue = totalValue.toFixed(2).replace(".", ",");
 
   return (
