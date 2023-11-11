@@ -17,16 +17,23 @@ const ContextProvider = ({ children }: iProps) => {
       setWishList([...wishList, newWishList]);
     }
   };
-
   useEffect(() => {
     localStorage.setItem("meuArray", JSON.stringify(wishList));
   }, [wishList]);
+
+  const deleteItemWishList = (produto: string) => {
+    const updatedWishDeleteTodo = wishList.filter(
+      (wish) => wish.produto !== produto
+    );
+    setWishList(updatedWishDeleteTodo);
+  };
 
   return (
     <Context.Provider
       value={{
         wishList,
         addItemWishList,
+        deleteItemWishList
       }}
     >
       {children}

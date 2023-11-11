@@ -7,4 +7,5 @@ export interface WishList {
 export interface WishListContextProps {
   wishList: WishList[];
   addItemWishList: (newWishList: WishList) => void;
+  deleteItemWishList: (produto: string) => void;
 }

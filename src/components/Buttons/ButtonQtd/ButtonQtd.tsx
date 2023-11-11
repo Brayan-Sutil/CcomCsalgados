@@ -2,7 +2,6 @@ import { useState } from "react";
 import css from "./ButtonQtd.module.css"
 
 const ButtonQtd = () => {
-
   const [value, setValue]= useState(0)
   
   const newValueAdd = () => {

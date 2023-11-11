@@ -1,10 +1,10 @@
 import css from "./OrderCart.module.css"
-import BoxProduct from "../../components/BoxProduct/BoxProduct";
 import { UseContextInProvider } from "../../Context/Context";
+import BoxProduct from "../../components/BoxProduct/BoxProduct";
 
 
 const OrderCart = () => {
-  const {  wishList } = UseContextInProvider()
+  const {  wishList, deleteItemWishList } = UseContextInProvider()
  
   return (
     <div className={css.containerOrderCart}>
@@ -12,7 +12,7 @@ const OrderCart = () => {
         <BoxProduct
           labelButton="Excluir"
           nameProduct={prod.produto}
-          onClick={() => "console.log(meuArray)"}
+          onClick={() => deleteItemWishList(prod.produto)}
           valueProduct={prod.valor}
           key={0}
         />
