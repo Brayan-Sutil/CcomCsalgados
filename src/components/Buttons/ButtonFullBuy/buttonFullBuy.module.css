@@ -25,6 +25,8 @@
 .container .iconText{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .container .details {

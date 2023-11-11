@@ -1,14 +1,13 @@
 .container{
-    width: 210px;
-    height: 270px;
+    padding: 0 15px;
+    width: 100%;
+    height: 125px;
     border: 2px solid black;
     border-radius: 15px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-around;
     text-align: center;
-    margin: 10px 10px;
 }
 
 .buttonQtd {
@@ -16,6 +15,8 @@
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
+    gap: 15px;
+    margin-right: 30px;
 }
 
 .imgProduct{
@@ -40,14 +41,53 @@
     margin: 5px 5px;
 }
 
+.containerData{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 15px;
+    align-items: center;
+}
+
+@media only screen and (max-device-width: 795px){
+  .buttonQtd{
+    margin-right: 0;
+    gap: 0;
+  }
+}
+
+/*  DAQUI PARA BAIXO DEVERA SER PARA CELULARES */
+
 @media only screen and (max-device-width: 720px){
     .container{
-        width: 100%;
         height: 150px;
-        align-items: center;
-        justify-content: space-around;
-        flex-direction: row;
     }
 
+    .containerData{
+        gap: 0;
+        flex-direction: column;
+    }
+
+    .name{
+        width: 200px;
+    }
 }
+
+@media only screen and (max-device-width: 360px){
+    .container{
+        height: 150px;
+        padding: 0;
+    }
+
+    .value, .name{
+        font-size: 18px;
+    }
+    
+    .imgProduct{
+        height: 90px;
+    }
+
+    
+}
+
 

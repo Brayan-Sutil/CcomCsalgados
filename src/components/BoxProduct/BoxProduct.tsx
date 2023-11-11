@@ -1,7 +1,7 @@
 import Button from "../Buttons/Button/Button"
 import Produto from "../../assets/produto1.png"
 import css from "./BoxProduct.module.css"
-// import ButtonQtd from "../Buttons/ButtonQtd/ButtonQtd";
+import ButtonQtd from "../Buttons/ButtonQtd/ButtonQtd";
 
 type PropsBoxProduct = {
   nameProduct: string;
@@ -23,7 +23,7 @@ const BoxProduct = ({
         <h1 className={css.name}>{nameProduct}</h1>
         <div className={css.buttonQtd}>
           <h2 className={css.value}>R$ {valueProduct}</h2>
-          {/* <ButtonQtd /> */}
+          <ButtonQtd />
         </div>
         <Button label={labelButton} onClick={onClick} />
       </div>
