@@ -1,7 +1,6 @@
 import { NavLink } from "react-router-dom";
 import css from "./buttonFullBuy.module.css"
 import { ShoppingCartOutlined } from '@mui/icons-material';
-import { UseContextInProvider } from "../../../Context/Context";
 
 type Props = {
   onclick: () => void;
